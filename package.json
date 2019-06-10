@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "postinstall": "node_modules/knex/bin/cli.js migrate:latest"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
