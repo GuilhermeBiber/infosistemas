@@ -1,0 +1,32 @@
+<h1>Veículos</h1>
+<p>Veículos cadastrados</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Placa</th>
+        <th>Chassi</th>
+        <th>Renavam</th>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Ano</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {{#each veiculos}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.placa}}</td>
+            <td>{{this.chassi}}</td>
+            <td>{{this.renavam}}</td>
+            <td>{{this.modelo}}</td>
+            <td>{{this.marca}}</td>
+            <td>{{this.ano}}</td>
+        </tr>
+    {{/each}}
+
+    </tbody>
+</table>
+`
